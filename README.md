@@ -1,4 +1,4 @@
-# Grand Swiss Analysis ♟️  
+# FIDE Grand Swiss Tournament 2025 Analysis ♟️  
 
 Data analysis of the **FIDE Grand Swiss 2025 (Open Section)** using the official Lichess PGN broadcast. This project parses every game into structured datasets and explores tournament insights through Python and Jupyter notebooks.  
 
