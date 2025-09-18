@@ -7,7 +7,7 @@ Data analysis of the **FIDE Grand Swiss 2025 (Open Section)** using the official
 ## 🔑 Key Insights Explored
 - **Result Distribution** → Draws vs wins with White/Black  
 - **Opening Trends** → Most played openings and their performance  
-- **Giant-Killer Upsets** → 2600s defeating 2700+ opponents  
+- **Giant-Killer Upsets** → David vs Goliath: Lower-rated opponents defeating much higher-rated opponents  
 - **Accuracy Under Pressure** → Blunders vs time scrambles  
 - **Game Lengths** → From 20-move knockouts to Abdusattorov–Erdogmus (189 moves!)  
 
@@ -16,19 +16,18 @@ Data analysis of the **FIDE Grand Swiss 2025 (Open Section)** using the official
 ## 📂 Project Structure
 ```
 grand-swiss-analysis/
+│── analysis/
+│   ├── parse_pgn.py          # PGN parsing logic
 │── data/
 │   ├── raw/         # Original PGN files
 │   ├── processed/   # Parsed datasets (games.csv, moves.csv)
 │
 │── notebooks/
 │   ├── 01_parsing.ipynb      # PGN → CSV pipeline
-│   ├── 02_exploration.ipynb  # First look at the data
-│   ├── 03_insights.ipynb     # Core tournament insights
 │
-│── src/
-│   ├── parse_pgn.py          # PGN parsing logic
 │
 │── README.md
+│── requirements.txt
 ```
 
 ---
@@ -58,12 +57,12 @@ grand-swiss-analysis/
 
 3. Run the parsing pipeline:
    ```bash
-   python src/parse_pgn.py data/raw/grand_swiss_2025.pgn data/processed/games.csv data/processed/moves.csv
+   python analysis/parsing.py
    ```
 
 4. Open Jupyter notebooks to explore insights:
    ```bash
-   jupyter notebook notebooks/
+   jupyter lab
    ```
 
 ---
