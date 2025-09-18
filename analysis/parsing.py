@@ -102,7 +102,7 @@ def parse_master_pgn(pgn_path: str, games_out: str, moves_out: str):
     pd.DataFrame(games_list).to_csv(games_out, index=False)
     pd.DataFrame(moves_list).to_csv(moves_out, index=False)
 
-    print(f"\n✅ Parsed {len(games_list)} games")
+    print(f"\n Parsed {len(games_list)} games")
     print(f"   → {games_out}")
     print(f"   → {moves_out}")
 
